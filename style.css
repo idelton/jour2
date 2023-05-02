@@ -1,0 +1,122 @@
+body{
+    background-color: #141414;
+    padding: 0;
+    margin:0;
+    color: #fff;
+}
+body .page{
+    margin: 20px 80px;   /* pour ecarter les page su bord */
+}
+
+/*Barre de Navigation */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;  /*pour fixer la barre de nav pour quelle descende*/
+    top: 0; /*pour quele reste fixe tout la haut*/
+    background-color:#141414 ;
+    padding: 10px 0px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px; 
+}
+nav .onglets a{
+    margin-right:20px ;
+    cursor: pointer; /*pas besoin si je mets href si il y href et que le lien deviens gris ajouter texte decoration none */
+}
+nav .buttons button{
+    padding: 13px 20px ;
+    color: #fff;
+    border: none ;
+    background-color: red;
+    cursor: pointer;
+}
+nav .buttons .login{
+background-color: inherit;
+margin-right: 10px;
+color: #8f8f8f;
+}
+nav .buttons .register{
+    background-color: #f54266;
+    margin-right: 10px;
+    color: #fff ;
+    }
+/*Barre de Navigation */
+/*Header*/
+header{
+    margin-top: 40px;
+    background-image:url("https://wallpapercave.com/wp/wp4077137.jpg");
+}
+header h1{
+    text-align: center;
+    font-size: 60px;
+    padding :400px;
+   /*background-size:; */
+}
+/*Fin Header*/
+/*Debut Footer*/
+footer{
+   background-color: #1a1a1a;
+   padding: 25px 100px;
+   color: #828282;
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Fin Footer*/
+
+@media screen and (max-width: 640px) {
+     body .page{
+        margin:10px;
+     }
+     nav .onglets{
+      display: none;
+     }
+     header{
+        margin-top: 250px 250px;
+    background-image: 300px;
+    background-size: 100% auto;
+        background-repeat: no-repeat;
+     }   
+     header h1{
+        font-size: 30px;
+       padding: 100px;
+     }         
+}
+@media screen  and (min-width: 640px) and (max-width: 980px){
+    nav .onglets{
+        display: flex;
+       }
+       header{
+        margin-top: 250px 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+     }   
+     header h1{
+        font-size: 30px;
+        padding: 90px;
+     }       
+}
+@media screen and (min-width: 980px) and (max-width: 1850px) {
+    body .page{
+        margin: 20px 80px; 
+    }
+    header{
+        text-align: center;
+    font-size: 60px;
+    padding :400px;
+    }   
+    header h1{
+       font-size: 30px;
+      padding: 100px;
+    }         
+}
+
+
+    
